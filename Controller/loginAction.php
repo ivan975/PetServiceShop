@@ -1,6 +1,5 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === "POST") {
-    // $isValid = true;
     $username = $_POST['username'];
     $password = $_POST['password'];
 

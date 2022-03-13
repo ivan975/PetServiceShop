@@ -1,5 +1,5 @@
 <?php
-    require'../Model/user.php';
+    // require'../Controller/loginAction.php';
 ?>
 <html>
 <head>
@@ -20,7 +20,7 @@
         ?>
     </p>
     <div class="container">
-    <form action="../Controller/userSignInAction.php" method="POST" style="text-align:-webkit-center">
+    <form action="../Controller/loginAction.php" method="POST" style="text-align:-webkit-center">
         <label for="username">Username</label>
         <input type="text" name="username" id="username"><br><br>
         <label for="password">Password</label>

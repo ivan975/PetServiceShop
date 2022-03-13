@@ -92,7 +92,7 @@
     } 
 ?>
 <html>
-    <body>
+    <body style="background-color:#90EE90">
         <h1 style="text-align:center">Create Account</h1>
         <div style="width:500px">    
         <form action="#" method="post">
