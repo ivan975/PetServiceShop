@@ -16,7 +16,6 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
             $errorMessage = "Login failed!";
         }
     }
-}
 
 function read()
 {
@@ -24,7 +23,7 @@ function read()
     $fo = fopen($filename, 'r');
     $fsize = filesize($filename);
     $data = array();
-    if ($fz > 0) {
+    if ($fsize > 0) {
         $fread = fread($fo, $fsize);
         $data = json_decode($fread);
     }
