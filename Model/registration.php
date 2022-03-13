@@ -94,25 +94,31 @@
 <html>
     <body style="background-color:#90EE90">
         <h1 style="text-align:center">Create Account</h1>
-        <div style="width:500px">    
+        <!-- <div style="width:500px">     -->
+        <table>
         <form action="#" method="post">
-                        <label for="FirstName">First Name:</label>
-                        <input type="text" name="firstname" id="firstname"value="<?php echo $firstName; ?>"><br><br>
+                    <tr>
+                    <td><label for="FirstName">First Name:</label></td>
+                    <td><input type="text" name="firstname" id="firstname"value="<?php echo $firstName; ?>"><br><br></td>
                         <?php
                             if($firstNameError){
                                 echo "<span style='color:red'>$firstNameError</span><br><br>";
                             }
 			            ?>
-                        <label for="LastName">Last Name:</label>
-                        <input type="text" name="lastname" id="lastname"value="<?php echo $lastName;?>"><br><br>
+                        </tr>
+                        <tr>
+                        <td><label for="LastName">Last Name:</label></td>
+                        <td><input type="text &nbsp" name="lastname" id="lastname"value="<?php echo $lastName;?>"><br><br></td>
                         <?php
                             if($lastNameError){
                                 echo "<span style='color:red'>$lastNameError</span><br><br>";
                             }
 			            ?>
+                        </tr>
 
-                        <label for="Email">Email:</label>
-                        <input type="email" name="email" id="email"value="<?php echo $username;?>"><br><br>
+                       <tr>
+                       <td><label for="Email">Email:</label></td>
+                       <td><input type="email" name="email" id="email"value="<?php echo $username;?>&nbsp"><br><br></td>
                         <?php
                             if($emailError){
                                 echo "<span style='color:red'>$emailError</span><br><br>";
@@ -121,22 +127,28 @@
                                     echo "<span style='color:red'>$emailFormatError</span><br><br>";
                             }
 			            ?>
-                        <label for="Username">Username:</label>
-                        <input type="text" name="username" id="username" value="<?php echo $confirmpassword; ?>"><br><br>
+                       </tr>
+                        <tr>
+                            <td> <label for="Username">Username:</label></td>
+                            <td><input type="text" name="username" id="username" value="<?php echo $confirmpassword; ?>"><br><br></td>
                         <?php
                             if($usernameError){
                                 echo "<span style='color:red'>$usernameError</span><br><br>";
                             }
 			            ?>
-                        <label for="Password">Password:</label></td>
-                        <input type="password" name="password" id="password"value="<?php echo $password; ?>"><br><br>
+                        </tr>
+                        <tr>
+                        <td><label for="Password">Password:</label></td>
+                        <td><input type="password" name="password" id="password"value="<?php echo $password; ?>"><br><br></td>
                         <?php
                             if($passwordError){
                                 echo "<span style='color:red'>$passwordError</span><br><br>";
                             }
 			            ?>
-                         <label for="ConfirmPassword">Confirm Password:</label></td>
-                         <input type="password" name="confirmpassword" id="confirmpassword" value="<?php echo $confirmpassword; ?>"><br><br>
+                        </tr>
+                        <tr>
+                        <td><label for="ConfirmPassword">Confirm Password:</label></td>
+                         <td><input type="password" name="confirmpassword" id="confirmpassword" value="<?php echo $confirmpassword; ?>"><br><br></td>
                          <?php
                             if($confirmpasswordError){
                                 echo "<span style='color:red'>$confirmpasswordError</span><br><br>";
@@ -145,15 +157,18 @@
                                 echo "<span style='color:red'>$passwordMatchError</span><br><br>";
                             }
 			            ?>
+                        </tr>
 
-                        <input type="submit" value="Submit" name="btnClick">
+                       <tr>
+                      <td><input type="submit" value="Submit" name="btnClick"></td>
                         <?php
                         if(isset($message))  
                         {  
                             echo $message;  
                         }  
                         ?>
-                         </div>
+                       </tr>
                 </form>
+        </table>
     </body>
 </html>
