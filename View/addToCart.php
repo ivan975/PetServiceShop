@@ -11,7 +11,7 @@
                     <tr>
                         <td>
                             <div class="productInfo">
-                                <img src="../images/catFood.jpg" alt="product1" height="250" width="250">
+                                <img src="../View/images/catFood.jpg" alt="product1" height="250" width="250">
                             </div>
                         </td>
                         <td><input type="number" value="1"></td>
