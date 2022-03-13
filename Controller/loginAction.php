@@ -25,7 +25,7 @@ function read()
         $fread = fread($f, $fsize);
         $data = json_decode($fread);
     }
-    fclose($fo);
+    fclose($f);
     return $data;
 }
 
