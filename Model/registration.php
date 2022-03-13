@@ -23,7 +23,7 @@
         }
         // if there are erros
         if(empty($_POST["firstname"]))  
-        {  
+        {   
            $firstNameError ="<label>Firsr name Required</label>";
         }
 
