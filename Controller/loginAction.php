@@ -1,5 +1,4 @@
 <?php
-
 if ($_SERVER['REQUEST_METHOD'] === "POST") {
     // $isValid = true;
     $username = $_POST['username'];
@@ -9,22 +8,22 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
         if ($result) {
             $loggedInUser = fetch($username, $password);
             session_start();
-            $_SESSION['username'] = $loggedInUser->username;
-            $_SESSION['fullName'] = $loggedInUser->fullName;
+            $_SESSION['username'] = $username;
+            $_SESSION['password'] = $password;
             header("Location: ../View/Homepage.php");
         } else {
-            $errorMessage = "Login failed!";
+            $message = "Login failed!";
         }
     }
 
 function read()
 {
     $filename = '../Model/userInfo.json';
-    $fo = fopen($filename, 'r');
+    $f = fopen($filename, 'r');
     $fsize = filesize($filename);
     $data = array();
     if ($fsize > 0) {
-        $fread = fread($fo, $fsize);
+        $fread = fread($f, $fsize);
         $data = json_decode($fread);
     }
     fclose($fo);
