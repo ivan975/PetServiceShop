@@ -1,25 +1,25 @@
 <?php
-    $firstName=$lastName=$emailError=$username=$password=$confirmpassword='';
-    $firstNameError=$lastNameError=$emailErrorError=$emailFormatError=$usernameError=$passwordError=$passwordMatchError=$confirmpasswordError='';
+    $firstName=$lastName=$email=$username=$password=$confirmpassword='';
+    $firstNameError=$lastNameError=$emailError=$emailFormatError=$usernameError=$passwordError=$passwordMatchError=$confirmpasswordError='';
 
     if(isset($_POST["btnClick"]))  {  
         if(isset($_POST["firstname"])){
             $firstName = $_POST["firstname"];
         }
         if(isset($_POST["lastname"])){
-            $firstName = $_POST["lastname"];
+            $lastName = $_POST["lastname"];
         }
         if(isset($_POST["email"])){
-            $firstName = $_POST["email"];
+            $email = $_POST["email"];
         }
         if(isset($_POST["username"])){
-            $firstName = $_POST["username"];
+            $username = $_POST["username"];
         }
         if(isset($_POST["password"])){
-            $firstName = $_POST["password"];
+            $password = $_POST["password"];
         }
         if(isset($_POST["confirmpassword"])){
-            $firstName = $_POST["confirmpassword"];
+            $confirmpassword = $_POST["confirmpassword"];
         }
         // if there are erros
         if(empty($_POST["firstname"]))  
@@ -62,34 +62,52 @@
             $passwordMatchError ="<label>Password does not match</label>";
         }
         else{
-            if(file_exists("userInfo.json")){ 
-                $current_data = file_get_contents('userInfo.json');
-                $tempJSONdata = json_decode($current_data, true);
+        //     if(file_exists("userInfo.json")){ 
+        //         $current_data = file_get_contents('userInfo.json');
+        //         $tempJSONdata = json_decode($current_data, true);
                 
-                $formdata = array(
-                        'username'      =>        $_POST["username"],
-                        'password'      =>        $_POST["password"]
-                    );
-                    $tempJSONdata[] = $formdata;
-                    $final_data = json_encode($tempJSONdata);
+        //         $formdata = array(
+        //                 'username'      =>        $_POST["username"],
+        //                 'password'      =>        $_POST["password"]
+        //             );
+        //             $tempJSONdata[] = $formdata;
+        //             $final_data = json_encode($tempJSONdata);
 
-                    // file_put_contents('../../Model/userInfo.json', json_encode($tempJSONdata));
+        //             // file_put_contents('../../Model/userInfo.json', json_encode($tempJSONdata));
                     
-                    if(file_put_contents("userInfo.json", $final_data))
-                    {
-                        $message = "<i>Registration Data Saved Successfully</i>";
-                    } 
-                    else
-                    {
-                        $message = "<i>No Data Saved!, Try Again</i>";
-                    }
-            }  
-            else  
-            {  
-                $message = "JSON file does not exist";  
-            } 
+        //             if(file_put_contents("userInfo.json", $final_data))
+        //             {
+        //                 $message = "<i>Registration Data Saved Successfully</i>";
+        //             } 
+        //             else
+        //             {
+        //                 $message = "<i>No Data Saved!, Try Again</i>";
+        //             }
+        //     }  
+        //     else  
+        //     {  
+        //         $message = "JSON file does not exist";  
+        $servername = "localhost";
+        $userName = "root";
+        $passwordd="";
+        $dbname = "petShop";
+        $firstName = $_POST["firstname"];
+        $lastName = $_POST["lastname"];
+        $email = $_POST["email"];
+        $username = $_POST["username"];
+        $password = $_POST["password"];
+        $confirmpassword = $_POST["confirmpassword"];
+        $conn = new mysqli($servername,$userName,$passwordd,$dbname);
+
+        if($conn->connect_error){
+            die("Connection Failed:".$conn->connect_error);
         }
-    } 
+        else{
+            $sql = "INSERT INTO registration (FirstName,LastName,Email,Username,Password,ConfirmPassword) VALUES ('".$firstName."','".$lastName."','".$email."','".$username."','".$password."','".$confirmpassword."')";
+            $result = $conn->query($sql);
+            }
+        }
+    }
 ?>
 <html>
     <body style="background-color:#90EE90">
