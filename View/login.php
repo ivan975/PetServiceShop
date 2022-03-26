@@ -14,9 +14,7 @@
     <h1 style="text-align:center">User Login</h1>
     <p class="invalid">
         <?php
-            if(isset($_GET['login']) && $_GET['login'] == 'false') {
-                echo "Please try again.";   
-            }
+           
         ?>
     </p>
     <div class="container">

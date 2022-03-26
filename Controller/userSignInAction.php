@@ -20,7 +20,7 @@
             header("Location: ../View/Homepage.php");
            }
         }
-        else {
-            header("Location:../View/login.php?login=false");
-        }
+        // else {
+        //     header("Location:../View/login.php?login=false");
+        // }
 ?>
