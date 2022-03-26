@@ -17,5 +17,4 @@
      }
         return $userPassword;
     }
-    
 ?>
