@@ -2,23 +2,13 @@
     // require'../Controller/loginAction.php';
 ?>
 <html>
-<head>
-    <title>User Login</title>
-    <style>
-        p.invalid{
-            color: red;
-        }
-    </style>
-</head>
-<body style="background-color:#90EE90">
-    <h1 style="text-align:center">User Login</h1>
-    <p class="invalid">
-        <?php
-           
-        ?>
-    </p>
+    <body>
+        <link rel="stylesheet" href="../View/css/login.css">
     <div class="container">
-    <form action="../Controller/userSignInAction.php" method="POST" style="text-align:-webkit-center">
+             <div class="upper">
+				<h3>Login</h3>
+			    </div>
+    <form action="../Controller/userSignInAction.php" method="POST">
         <label for="username">Username</label>
         <input type="text" name="username" id="username"><br><br>
         <label for="password">Password</label>
