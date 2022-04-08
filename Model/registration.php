@@ -151,28 +151,6 @@
                        </tr>
                        </form>
         </table>
-                       <!-- <script>
-                           function validate(){
-                               var firstname = document.getElementById('firstname');
-                               var lastname = document.getElementById('lastname');
-                               var email = document.getElementById('email');
-                               var username = document.getElementById('username');
-                               var password = document.getElementById('password');
-                               var confirmpassword = document.getElementById('confirmpassword');
-
-                               if(firstname.value==""||lastname.value==""||email.value==""||username.value==""||password.value==""||confirmpassword.value==""||){
-                                   alert('Firstname cannot be empty');
-                                   alert('Lastname cannot be empty');
-                                   alert('Email cannot be empty');
-                                   alert('Username cannot be empty');
-                                   alert('Password cannot be empty');
-                                   alert('Confirm Password cannot be empty');
-                                   return false;
-                               }
-                               else{
-                                    return true;
-                               }
-                           }
-                       </script> -->
+                       <!--   -->
           </body>
 </html>
