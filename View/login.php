@@ -2,22 +2,41 @@
     // require'../Controller/loginAction.php';
 ?>
 <html>
-    <body>
+    <head>
+        <title>Login</title>
         <link rel="stylesheet" href="../View/css/login.css">
+    </head>
+<body>
     <div class="container">
-             <div class="upper">
-				<h3>Login</h3>
-			    </div>
-    <form action="../Controller/userSignInAction.php" method="POST">
-        <label for="username">Username</label>
-        <input type="text" name="username" id="username"><br><br>
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password"><br><br>
-        <input type="checkbox" name="remember" id="remember">
-        <label for="remember">Remember me</label><br><br>
-        <input type="submit" value="login">
-        <p>Don’t have an account? <a href="../Model/registration.php">Sign up</a>.</p>
-    </form>
-    </div>
-</body>
+		<div class="img">
+			<img src="../View/images/loginandreg.svg">
+		</div>
+		<div class="login-content">
+			<form action="index.html">
+				<img src="img/avatar.svg">
+				<h2 class="title">Welcome</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Username</h5>
+           		   		<input type="text" class="input">
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input type="password" class="input">
+            	   </div>
+            	</div>
+            	<a href="#">Forgot Password?</a>
+            	<input type="submit" class="btn" value="Login">
+            </form>
+        </div>
+    </div>    
+    </body>
 </html>

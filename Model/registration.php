@@ -110,47 +110,9 @@
     }
 ?>
 <html>
-    <body style="background-color:#90EE90">
-        <h1 style="text-align:center">Create Account</h1>
-        <!-- <div style="width:500px">     -->
-        <table>
-        <form onsubmit= "return validate()"action="#" method="post">
-                    <tr>
-                    <td><label for="FirstName">First Name:</label></td>
-                    <td><input type="text" name="firstname" id="firstname"value="<?php echo $firstName; ?>"><br><br></td>
-                        </tr>
-                        <tr>
-                        <td><label for="LastName">Last Name:</label></td>
-                        <td><input type="text &nbsp" name="lastname" id="lastname"value="<?php echo $lastName;?>"><br><br></td>
-                        
-                        </tr>
-
-                       <tr>
-                       <td><label for="Email">Email:</label></td>
-                       <td><input type="email" name="email" id="email"value="<?php echo $username;?>&nbsp"><br><br></td>
-                       
-                       </tr>
-                        <tr>
-                            <td> <label for="Username">Username:</label></td>
-                            <td><input type="text" name="username" id="username" value="<?php echo $confirmpassword; ?>"><br><br></td>
-                        
-                        </tr>
-                        <tr>
-                        <td><label for="Password">Password:</label></td>
-                        <td><input type="password" name="password" id="password"value="<?php echo $password; ?>"><br><br></td>
-                        
-                        </tr>
-                        <tr>
-                        <td><label for="ConfirmPassword">Confirm Password:</label></td>
-                         <td><input type="password" name="confirmpassword" id="confirmpassword" value="<?php echo $confirmpassword; ?>"><br><br></td>
-                         
-                        </tr>
-
-                       <tr>
-                      <td><input type="submit" value="Submit" name="btnClick"></td>
-                       </tr>
-                       </form>
-        </table>
-                       <!--   -->
-          </body>
+    <body>
+            <div class="container">
+                
+            </div>
+    </body>
 </html>
