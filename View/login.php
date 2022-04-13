@@ -4,39 +4,14 @@
 <html>
     <head>
         <title>Login</title>
-        <link rel="stylesheet" href="../View/css/login.css">
+		<link rel="stylesheet" href="../View/css/Login.css">
     </head>
 <body>
     <div class="container">
-		<div class="img">
-			<img src="../View/images/loginandreg.svg">
-		</div>
-		<div class="login-content">
-			<form action="index.html">
-				<img src="img/avatar.svg">
-				<h2 class="title">Welcome</h2>
-           		<div class="input-div one">
-           		   <div class="i">
-           		   		<i class="fas fa-user"></i>
-           		   </div>
-           		   <div class="div">
-           		   		<h5>Username</h5>
-           		   		<input type="text" class="input">
-           		   </div>
-           		</div>
-           		<div class="input-div pass">
-           		   <div class="i"> 
-           		    	<i class="fas fa-lock"></i>
-           		   </div>
-           		   <div class="div">
-           		    	<h5>Password</h5>
-           		    	<input type="password" class="input">
-            	   </div>
-            	</div>
-            	<a href="#">Forgot Password?</a>
-            	<input type="submit" class="btn" value="Login">
-            </form>
-        </div>
-    </div>    
-    </body>
+			<form action=<form action="../Controller/userSignInAction.php" method="POST" class="sign-in-form">
+				<h1>Login</h1>
+				<input type="text" name="username" placeholder="Username">
+				<input type="password" name="password" placeholder="Password">
+				<input type="submit" name="btnSignup" value="Login">	
+	</div>
 </html>
