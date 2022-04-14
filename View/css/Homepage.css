@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+*{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .3s cubic-bezier(.38,1.15,.7,1.12);
+}
+*::selection{
+    background-color: #3333;
+    color: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+header{
+    width: 98%;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    position: relative;
+}
+#search-action{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    background-color: var(--crimson);
+    padding: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0);
+    transform-origin: top;
+    transform:scaleY(0);
+    opacity: 0;
+}
+#search-action #search{
+        width: 100%;
+        padding: 1rem;
+        text-transform: none;
+        font-size: 2rem;
+}
+
+#search-action #search::placeholder{
+    text-transform: capitalize;
+}
+#search-action label{
+        font-size: 3rem;
+        color: #333;
+        padding-left: 2rem;
+        cursor: pointer;
+}
+header .logo{
+        font-size: 2.5rem;
+        color: #333;
+}
+header .logo i{
+    transform: rotate(-60deg);
+    color: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);;
+}
+header .icons i,header .icons a{
+    font-size: 2.5rem;
+    color: #333;
+    padding-left: 1.5rem;
+    cursor: pointer;
+}
+header .icons i:hover,header .icons a:hover{
+    color: rgb(241, 234, 87);
+}
+header .navbar a{
+    color: #333;
+    font-size: 1.7rem;
+    padding: 0 1rem;
+}
+header .navbar a:hover{
+    color: rgb(241, 234, 87);
+}
+/* header section ends here */
+
+/* home section starts here */
+    section{
+        padding: 1rem 5%;
+    }
+    .home{
+        min-height: 70vh;
+        background: url(../images/home-bg.webp) no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+    }
+    .home .content span{
+        color: #333;
+        font-size: 3rem;
+    }
+    .home .content  h3{
+        color: #333;
+        font-size: 5.5rem;
+    }
+    .btn{
+        display: inline-block;
+        margin-top: 1rem;
+        padding:.7rem 2.5rem;
+        font-size: 1.5rem;
+        border-radius: .5rem;
+        color:#333;
+        background:var(--yellow);
+        position: relative;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        overflow: hidden;
+        z-index: 0;
+    }
+    .btn::before{
+        content: '';
+        position: absolute;
+        top:0; left:0;
+        height: 100%;
+        width:100%;
+        clip-path: polygon(0 0, 100% 0, 10% 25%, 0 100%);
+        z-index: -1;
+        background:#444;
+        transition: .3s cubic-bezier(.38,1.15,.7,1.12);
+    }
+    .btn:hover:before{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .btn:hover{
+        color:yellow;
+    }
+    .home .content .btn{
+        background:#fff;
+    }
+/* home section ends here */

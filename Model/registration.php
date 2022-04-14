@@ -90,7 +90,7 @@
         $servername = "localhost";
         $userName = "root";
         $passwordd="";
-        $dbname = "petShop";
+        $dbname = "petshop";
         $firstName = $_POST["firstname"];
         $lastName = $_POST["lastname"];
         $email = $_POST["email"];
@@ -110,9 +110,21 @@
     }
 ?>
 <html>
+    <head>
+        <title>Registration</title>
+        <link rel="stylesheet" href="../View/css/registration.css">
+    </head>
     <body>
-            <div class="container">
-                
-            </div>
+    <div class="container">
+			<form action="registration.php" method="POST">
+				<h1>Registration</h1>
+				<input type="text" name="firstname" placeholder="First Name">
+				<input type="text" name="lastname" placeholder="Last Name">
+				<input type="text" name="email" placeholder="Email">
+				<input type="text" name="username" placeholder="Username">
+				<input type="password" name="password" placeholder="Password">
+				<input type="password" name="confirmpassword" placeholder="Confirm Password">
+				<input type="submit" name="btnClick" value="Sign Up">	
+	</div>
     </body>
 </html>
