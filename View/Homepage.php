@@ -39,9 +39,40 @@
                 <section class="home" id="home">
                     <div class="content">
                         <span>upto 70% off</span>
-                        <h3>we care about <br> your pet!!!</h3>
+                        <h3>We care about <br> your pet!!!</h3>
                         <a href="#" class="btn">Get Started</a>
                     </div>
                 </section>
+                <section class="category" id="category">
+
+            <h1 class="heading"> <i class="fas fa-paw"></i> Shop by Category <i class="fas fa-paw"></i> </h1>
+
+            <div class="box-container">
+         
+                <div class="box">
+                    <img src="../View/images/c1.webp" alt="">
+                    <h3>Food for Dogs</h3>
+                    <a href="#" class="btn">shop now</a>
+                </div>
+        
+         <div class="box">
+             <img src="../View/images/c2.webp" alt="">
+             <h3>food for cats</h3>
+             <a href="#" class="btn">shop now</a>
+         </div>
+        
+         <div class="box">
+             <img src="../View/images/c3.webp" alt="">
+             <h3>Food for Rabbits</h3>
+             <a href="#" class="btn">Shop Now</a>
+         </div>
+        
+         <div class="box">
+             <img src="../View/images/c4.webp" alt="">
+             <h3>Food for Birds</h3>
+             <a href="#" class="btn">Shop Now</a>
+         </div>
+    </div>
+</section>
     </body>
 </html>

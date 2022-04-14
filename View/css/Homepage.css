@@ -136,3 +136,49 @@ header .navbar a:hover{
         background:#fff;
     }
 /* home section ends here */
+
+/* category section starts here */
+.heading{
+    text-align: center;
+    padding:1rem;
+    color:#333;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
+    font-size: 3rem;
+    padding-top: 8rem;
+}
+.heading i{
+    padding:0.5rem;
+    color:yellow;
+}
+.category .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:1rem 0;
+}
+
+.category .box-container .box{
+    width:25rem;
+    margin:2rem;
+    text-align: center;
+}
+
+.category .box-container .box img{
+    width: 100%;
+}
+
+.category .box-container .box h3{
+    color:#333;
+    font-size: 2rem;
+    padding:1rem 0;
+}
+
+.featured .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:1rem 0;
+}
+/* category section ends here */
