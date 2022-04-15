@@ -9,59 +9,23 @@
     text-transform: capitalize;
     transition: .3s cubic-bezier(.38,1.15,.7,1.12);
 }
-h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    font-size: 40px;
-}
-.products .box-container{
+.about{
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
+    gap: 2rem;
 }
-
-.products .box-container .box{
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    border:.1rem solid rgba(0,0,0,.1);
-    border-radius: .5rem;
-    padding:1rem;
-    margin:1.5rem;
-    flex:1 1 30rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: yellow;
+.image{
+    flex: 1 1 40rem;
+    width: 100%;
+    height: 12rem;
 }
-.products .box-container .box img{
-    width:15rem;
+.content{
+    flex: 1 1 40rem;
 }
-
-.products .box-container .box .content{
-    padding:1rem;
-}
-
-.products .box-container .box .content .stars i{
-    font-size: 1.5rem;
-    color:var(--yellow);
-}
-
-.products .box-container .box .content h3{
-    font-size: 2rem;
-    color:#333;
-    padding:.5rem 0;
-}
-
-.products .box-container .box .content .price{
-    font-size: 2rem;
-    color:#666;
-}
-
-.products .box-container .box .content .price span{
-    font-size: 1.5rem;
-    text-decoration: line-through;
+h3{
+        color: #333;
+        font-size: 4rem;
 }
 .btn{
     display: inline-block;
@@ -92,4 +56,4 @@ h1{
 }
 .btn:hover{
     color:yellow;
-}   
+}

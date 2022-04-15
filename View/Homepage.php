@@ -19,7 +19,7 @@
                         <a href="Homepage.php">Homepage</a>
                         <a href="about.php">About Us</a>
                         <a href="shop.php">Shop</a>
-                        <a href="plan.php">Plan</a>
+                        <a href="discount.php">Plan</a>
                         <a href="Services.php">Services</a>
                         <a href="ContactUs.php">Contact Us</a>
                     </nav>
@@ -27,7 +27,7 @@
                     <div class="icons">
                         <div class="fas fa-search" id="search-icon"></div>
                         <a href="#" class="fas fa-heart"></a>
-                        <a href="#" class="fas fa-shopping-cart"></a>
+                        <a href="addToCart.php" class="fas fa-shopping-cart"></a>
                     </div>
 
                     <form action="" id="search-action">
@@ -52,25 +52,25 @@
                 <div class="box">
                     <img src="../View/images/c1.webp" alt="">
                     <h3>Food for Dogs</h3>
-                    <a href="#" class="btn">shop now</a>
+                    <a href="" class="btn">shop now</a>
                 </div>
         
          <div class="box">
              <img src="../View/images/c2.webp" alt="">
              <h3>food for cats</h3>
-             <a href="#" class="btn">shop now</a>
+             <a href="services.php" class="btn">shop now</a>
          </div>
         
          <div class="box">
              <img src="../View/images/c3.webp" alt="">
              <h3>Food for Rabbits</h3>
-             <a href="#" class="btn">Shop Now</a>
+             <a href="services.php" class="btn">Shop Now</a>
          </div>
         
          <div class="box">
              <img src="../View/images/c4.webp" alt="">
              <h3>Food for Birds</h3>
-             <a href="#" class="btn">Shop Now</a>
+             <a href="services.php" class="btn">Shop Now</a>
          </div>
     </div>
 </section>

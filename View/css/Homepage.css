@@ -109,7 +109,7 @@ header .navbar a:hover{
         font-size: 1.5rem;
         border-radius: .5rem;
         color:#333;
-        background:var(--yellow);
+        background:yellow;
         position: relative;
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
         overflow: hidden;
@@ -182,3 +182,5 @@ header .navbar a:hover{
     padding:1rem 0;
 }
 /* category section ends here */
+
+  
