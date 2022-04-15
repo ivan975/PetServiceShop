@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+*{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .3s cubic-bezier(.38,1.15,.7,1.12);
+}
+#img{
+    width: 250px;
+    height:250px ;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.products .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.products .box-container .box{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border:.1rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    padding:1rem;
+    margin:1.5rem;
+    flex:1 1 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: gold; */
+}
+.products .box-container .box img{
+    width:15rem;
+}
+
+.products .box-container .box .content{
+    padding:1rem;
+}
+
+.products .box-container .box .content .stars i{
+    font-size: 1.5rem;
+    color:var(--yellow);
+}
+
+.products .box-container .box .content h3{
+    font-size: 2rem;
+    color:#333;
+    padding:.5rem 0;
+}
+
+.products .box-container .box .content .price{
+    font-size: 2rem;
+    color:#666;
+}
+
+.products .box-container .box .content .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.7rem 2.5rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    color:#333;
+    background:gold;
+    position: relative;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    overflow: hidden;
+    z-index: 0;
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    top:0; left:0;
+    height: 100%;
+    width:100%;
+    clip-path: polygon(0 0, 100% 0, 10% 25%, 0 100%);
+    z-index: -1;
+    background:#444;
+    transition: .3s cubic-bezier(.38,1.15,.7,1.12);
+}
+.btn:hover:before{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.btn:hover{
+    color:yellow;
+}
