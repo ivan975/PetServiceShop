@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+*{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .3s cubic-bezier(.38,1.15,.7,1.12);
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+#img{
+    height: 250px;
+    width:  250px;
+}
+.featured .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding:1rem 0;
+}
+
+.featured .box-container .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:1rem;
+    margin:1rem;
+    flex:1 1 40rem;
+    position: relative;
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.1);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+.featured .box-container .box img{
+    width: 20rem;
+}
+
+.featured .box-container .box .price{
+    position: absolute;
+    top:1rem; right:1rem;
+    height:6rem;
+    width:6rem;
+    text-align: center;
+    line-height: 6rem;
+    border-radius: 50%;
+    background:gold;
+    color:#333;
+    font-size: 1.5rem;
+}
+
+.featured .box-container .box .content{
+    padding:1rem;
+}
+
+.featured .box-container .box .content .stars i{
+    color:var(--yellow);
+    font-size: 1.5rem;
+}
+
+.featured .box-container .box .content h3{
+    font-size: 2rem;
+    color:#333;
+    padding-top: .5rem;
+}
+
+.featured .box-container .box .content p{
+    font-size: 1.5rem;
+    color:#666;
+    padding: 1rem 0;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.7rem 2.5rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    color:#333;
+    background:gold;
+    position: relative;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    overflow: hidden;
+    z-index: 0;
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    top:0; left:0;
+    height: 100%;
+    width:100%;
+    clip-path: polygon(0 0, 100% 0, 10% 25%, 0 100%);
+    z-index: -1;
+    background:#444;
+    transition: .3s cubic-bezier(.38,1.15,.7,1.12);
+}
+.btn:hover:before{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.btn:hover{
+    color:yellow;
+}

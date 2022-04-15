@@ -148,7 +148,7 @@ header .navbar a:hover{
 }
 .heading i{
     padding:0.5rem;
-    color:yellow;
+    color:rgb(195, 168, 16);
 }
 .category .box-container{
     display: flex;
