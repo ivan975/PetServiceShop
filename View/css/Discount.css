@@ -9,71 +9,44 @@
     text-transform: capitalize;
     transition: .3s cubic-bezier(.38,1.15,.7,1.12);
 }
-
-h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-}
-.featured .box-container{
+.offer .box-container{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding:1rem 0;
 }
 
-.featured .box-container .box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding:1rem;
-    margin:1rem;
+.offer .box-container .box{
     flex:1 1 40rem;
+    margin:2rem;
     position: relative;
-    border-radius: .5rem;
-    border:.1rem solid rgba(0,0,0,.1);
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    background-color: yellow;
 }
 
-.featured .box-container .box img{
-    width: 15rem;
+.offer .box-container .box img{
+    width:100%;
 }
 
-.featured .box-container .box .price{
+.offer .box-container .box .content{
     position: absolute;
-    top:1rem; right:1rem;
-    height:6rem;
-    width:6rem;
-    text-align: center;
-    line-height: 6rem;
-    border-radius: 50%;
-    background:rgb(209, 203, 167);
+    top:50%; left:10%;
+    transform:translateY(-50%);
     color:#333;
-    font-size: 1.5rem;
 }
 
-.featured .box-container .box .content{
-    padding:1rem;
-}
-
-.featured .box-container .box .content .stars i{
-    color:yellow;
-    font-size: 1.5rem;
-}
-
-.featured .box-container .box .content h3{
+.offer .box-container .box .content span{
     font-size: 2rem;
-    color:#333;
-    padding-top: .5rem;
 }
 
-.featured .box-container .box .content p{
-    font-size: 1.5rem;
-    color:#666;
-    padding: 1rem 0;
+.offer .box-container .box .content h3{
+    font-size: 3.5rem;
+}
+
+.offer .box-container .box:first-child .content .btn{
+    color:#fff;
+}
+
+.offer .box-container .box:last-child .content .btn{
+    color:#fff;
 }
 .btn{
     display: inline-block;
@@ -101,7 +74,4 @@ h1{
 }
 .btn:hover:before{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-}
-.btn:hover{
-    color:yellow;
 }

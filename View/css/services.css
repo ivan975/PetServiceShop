@@ -9,10 +9,6 @@
     text-transform: capitalize;
     transition: .3s cubic-bezier(.38,1.15,.7,1.12);
 }
-#img{
-    width: 250px;
-    height:250px ;
-}
 h1{
     display: flex;
     justify-content: center;
@@ -37,7 +33,7 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: gold; */
+    background-color: yellow;
 }
 .products .box-container .box img{
     width:15rem;
@@ -74,7 +70,7 @@ h1{
     font-size: 1.5rem;
     border-radius: .5rem;
     color:#333;
-    background:gold;
+    background:rgb(183, 179, 155);
     position: relative;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     overflow: hidden;

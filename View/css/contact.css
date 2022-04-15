@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+*{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .3s cubic-bezier(.38,1.15,.7,1.12);
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+.contact{
+    background:url(../images/contact-bg.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 7rem;
+}
+
+.contact .heading i{
+    color:#fff;
+}
+
+.contact form{
+    padding:2rem 10%;
+    text-align: center;
+}
+ 
+.contact form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact form .inputBox input, .contact form textarea{
+    padding:1rem 2rem;
+    margin:1rem 0;
+    width:49%;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    text-transform: none;
+}
+
+.contact form .inputBox input::placeholder, .contact form textarea::placeholder{
+    text-transform: capitalize;
+}
+
+.contact form textarea{
+    height: 15rem;
+    resize: none;
+    width:100%;
+}
+
+.contact form .btn{
+    cursor: pointer;
+    background:#fff;
+}
+
+.contact form .btn:hover{
+    background:#333;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.7rem 2.5rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    color:rgb(224, 92, 92);
+    background:rgb(92, 90, 76);
+    position: relative;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    overflow: hidden;
+    z-index: 0;
+}

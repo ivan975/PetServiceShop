@@ -1,28 +1,31 @@
 <html>
-    <head><title>Contact Us</title></head>
+    <head>
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="../View/css/contact.css">
+    </head>
     <body>
-    <div class="container">
-        <table>
-        <form action="#">
-                <tr>
-                    <td><label for="firstname">First Name</label></td>
-                    <td><input type="text" name="firstname" placeholder="Your name.."></td>
-                </tr>
-            <tr>
-                <td><label for="email">Last Name</label></td>
-                <td><input type="text" name="email" placeholder="Your last name.."></td>
-            </tr>
-            <tr>
-                <td><label for="subject">Subject</label></td>
-                <td><textarea id="subject" name="subject" placeholder="Write something.." style="height:300px;width:300px"></textarea></td>
-            </tr>
-            <tr>
-                <td><input type="submit" value="Submit"></td>
-            </tr>
-      </form>
-    </table>
-    </div>
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <i class="fas fa-paw"></i> Contact us <i class="fas fa-paw"></i> </h1>
+
+            <form action="">
+
+                <div class="inputBox">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                </div>
+
+                <div class="inputBox">
+                    <input type="number" placeholder="number">
+                    <input type="text" placeholder="subject">
+                </div>
+
+                <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+
+                <input type="submit" value="send message" class="btn">
+
+            </form>
+
+        </section>
     </body>
 </html>
-<?php
-?>

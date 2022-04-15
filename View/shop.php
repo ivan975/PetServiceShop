@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Shop Now</title>
-    <link rel="stylesheet" href="../View/css/shop.css">
+        <link rel="stylesheet" href="../View/css/shop.css">
     </head>
     <body>
     <section class="featured" id="featured">
