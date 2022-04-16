@@ -1,11 +1,14 @@
-const namee =  document.getElementById('username')
-const password = document.getElementById('password')
 const form = document.getElementById('form')
+const username = document.getElementById('username')
+const password = document.getElementById('password')
 
 form.addEventListener('submit',(e) => {
-        let messages = []
-
-        if (namee.value==''||namee.value==null){
-            alert('Name is required');
-        }
+    if(username.value==''||username.value==null){
+        e.preventDefault();
+        alert("Username is empty");
+    }
+    if(password.value==''||password.value==null){
+        e.preventDefault();
+        alert("Password is empty...");
+    }
 });

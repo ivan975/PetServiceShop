@@ -105,8 +105,8 @@
         else{
             $sql = "INSERT INTO registration (FirstName,LastName,Email,Username,Password,ConfirmPassword) VALUES ('".$firstName."','".$lastName."','".$email."','".$username."','".$password."','".$confirmpassword."')";
             $result = $conn->query($sql);
-            }
         }
+}
     }
 ?>
 <html>
@@ -116,15 +116,16 @@
     </head>
     <body>
     <div class="container">
-			<form action="registration.php" method="POST">
+			<form action="registration.php" method="POST" id='form'>
 				<h1>Registration</h1>
-				<input type="text" name="firstname" placeholder="First Name">
-				<input type="text" name="lastname" placeholder="Last Name">
-				<input type="text" name="email" placeholder="Email">
-				<input type="text" name="username" placeholder="Username">
-				<input type="password" name="password" placeholder="Password">
-				<input type="password" name="confirmpassword" placeholder="Confirm Password">
-				<input type="submit" name="btnClick" value="Sign Up">	
+                        <input type="text" name="firstname" placeholder="First Name">
+                        <input type="text" name="lastname" placeholder="Last Name">
+                        <input type="text" name="email" placeholder="Email">
+                        <input type="text" name="username" placeholder="Username">
+                        <input type="password" name="password" placeholder="Password">
+                        <input type="password" name="confirmpassword" placeholder="Confirm Password">
+				        <input type="submit" name="btnClick" value="Sign Up">	
 	</div>
     </body>
+    <script src="../View/js/regValidation.js"></script>
 </html>
