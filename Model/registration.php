@@ -118,12 +118,12 @@
     <div class="container">
 			<form action="registration.php" method="POST" id='form'>
 				<h1>Registration</h1>
-                        <input type="text" name="firstname" placeholder="First Name">
-                        <input type="text" name="lastname" placeholder="Last Name">
-                        <input type="text" name="email" placeholder="Email">
-                        <input type="text" name="username" placeholder="Username">
-                        <input type="password" name="password" placeholder="Password">
-                        <input type="password" name="confirmpassword" placeholder="Confirm Password">
+                        <input type="text" id ="firstname"name="firstname" placeholder="First Name">
+                        <input type="text" id="lastname" name="lastname" placeholder="Last Name">
+                        <input type="text" id="email" name="email" placeholder="Email">
+                        <input type="text" id="username" name="username" placeholder="Username">
+                        <input type="password"id="password" name="password" placeholder="Password">
+                        <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password">
 				        <input type="submit" name="btnClick" value="Sign Up">	
 	</div>
     </body>
