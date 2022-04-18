@@ -51,32 +51,9 @@ body{
 	color: wheat;
 	transition: 0.25s;
 }
+.container input[type="checkbox"]{
+	color:rgb(255, 255, 255);
+}
 .container input[type="submit"]:hover{
 		background-color: rgb(150, 255, 255);
 }
-/* .form-control i{
-	position:absolute;
-	top:35px;
-	right:10px;
-	visibility:hidden;
-}
-.form-control small{
-visibility:hidden;
-position:absolute;
-bottom:0px;
-color:red;
-left:0px;
-}
-.form-control1 i{
-	position:absolute;
-	top:35px;
-	right:10px;
-	visibility:hidden;
-}
-.form-control1 small{
-visibility:hidden;
-position:absolute;
-bottom:10px;
-color:red;
-left:0px;
-} */

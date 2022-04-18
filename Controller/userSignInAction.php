@@ -37,9 +37,10 @@
                         }
                     }
                 // }
-                    // session_start();
-                    //    if($_POST['username'] == $userName && $_POST['password'] == $userPassword){
-                    //     $_SESSION['username'] = $_POST['username'];
-                    //     $_SESSION['userpassword'] = $_POST['password'];
-                    //     header("Location: ../View/Homepage.php");
+                    session_start();
+                       if($_POST['username'] == $userName && $_POST['password'] == $userPassword){
+                        $_SESSION['username'] = $_POST['username'];
+                        $_SESSION['userpassword'] = $_POST['password'];
+                        header("Location: ../View/Homepage.php");
+                       }
 ?>

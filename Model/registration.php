@@ -1,6 +1,6 @@
 <?php
     $firstName=$lastName=$email=$username=$password=$confirmpassword='';
-    $firstNameError=$lastNameError=$emailError=$emailFormatError=$usernameError=$passwordError=$passwordMatchError=$confirmpasswordError='';
+    // $firstNameError=$lastNameError=$emailError=$emailFormatError=$usernameError=$passwordError=$passwordMatchError=$confirmpasswordError='';
 
     if(isset($_POST["btnClick"]))  {  
         if(isset($_POST["firstname"])){
@@ -105,6 +105,7 @@
         else{
             $sql = "INSERT INTO registration (FirstName,LastName,Email,Username,Password,ConfirmPassword) VALUES ('".$firstName."','".$lastName."','".$email."','".$username."','".$password."','".$confirmpassword."')";
             $result = $conn->query($sql);
+            echo "Registration Successful";
         }
 }
     }

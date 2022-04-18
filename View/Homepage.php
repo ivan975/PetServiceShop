@@ -26,8 +26,10 @@
 
                     <div class="icons">
                         <div class="fas fa-search" id="search-icon"></div>
-                        <a href="#" class="fas fa-heart"></a>
+                        <a href="../Controller/ajax.php" class="fas fa-user-alt"></a>
                         <a href="addToCart.php" class="fas fa-shopping-cart"></a>
+                        <a href="../Controller/ajax.php" class="far fa-file"></a>
+                        <a href="login.php" class="fas fa-power-off"></a>
                     </div>
 
                     <form action="" id="search-action">

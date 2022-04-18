@@ -10,7 +10,9 @@
 				<h1>Login</h1>
 						<input type="text" name="username" id="username" placeholder="Username">
 						<input type="password" name="password" id="password" placeholder="Password">
-					<input type="submit" name="btnSignup" value="Login">
+						<input type="checkbox" id="remember">
+						<label for="remember">Remember Me</label>
+					    <input type="submit" name="btnSignin" value="Login"> 
 		</div>
 	</body>
 	<script src="../View/js/validation.js"></script>

@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+*{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .3s cubic-bezier(.38,1.15,.7,1.12);
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+.user{
+    background:url(../images/contact-bg.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 25rem;
+}
+
+.user .heading i{
+    color:#fff;
+}
+
+.user form{
+    padding:2rem 10%;
+    text-align: center;
+}
+ 
+.user form .inputBox{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.user form .inputBox input{
+    padding:1rem 2rem;
+    margin:1rem 0;
+    width:49%;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    text-transform: none;
+}
+
+.user form .inputBox input::placeholder{
+    text-transform: capitalize;
+}
+.user form .btn{
+    cursor: pointer;
+    background:#fff;
+}
+
+.user form .btn:hover{
+    background:#333;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.7rem 2.5rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    color:rgb(224, 92, 92);
+    background:rgb(92, 90, 76);
+    position: relative;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    overflow: hidden;
+    z-index: 0;
+}

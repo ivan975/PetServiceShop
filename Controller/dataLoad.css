@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+*{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    /* border: none; */
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .3s cubic-bezier(.38,1.15,.7,1.12);
+    background: url(../View/images/contact-bg.webp);
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+}
+#load{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.7rem 2.5rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    color:#333;
+    background:rgb(183, 179, 155);
+    position: relative;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    overflow: hidden;
+    z-index: 0;
+    position: absolute;
+	top: 50%;
+	left: 50%;	
+	transform: translate(-50%,-50%);
+}
+#load::before{
+    content: '';
+    position: absolute;
+    top:0; left:0;
+    height: 100%;
+    width:100%;
+    clip-path: polygon(0 0, 100% 0, 10% 25%, 0 100%);
+    z-index: -1;
+    background:rgb(249, 223, 223);
+    transition: .3s cubic-bezier(.38,1.15,.7,1.12);
+}
+#load:hover:before{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
