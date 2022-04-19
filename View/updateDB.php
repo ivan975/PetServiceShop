@@ -12,7 +12,7 @@ if (isset($_GET['id'])) {
 
 	$ID = validate($_GET['id']);
 
-	$sql = "SELECT * FROM users WHERE ID=$ID";
+	$sql = "SELECT * FROM user WHERE ID=$ID";
     $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result) > 0) {

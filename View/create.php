@@ -14,7 +14,7 @@ if (isset($_POST['create'])) {
 
 	$user_data = 'name='.$name. '&email='.$email;
 
-       $sql = "INSERT INTO crud(name, email) VALUES('$name', '$email')";
+       $sql = "INSERT INTO user (name, email) VALUES('$name', '$email')";
        $result = mysqli_query($conn, $sql);
        if ($result) {
        	  header("Location: ../View/read.php?success=successfully created");

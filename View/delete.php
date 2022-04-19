@@ -12,7 +12,7 @@ if(isset($_GET['ID'])){
 	$id = validate($_GET['ID']);
 
 	$sql = "DELETE FROM users
-	        WHERE ID=$ID";
+	        WHERE id=$id";
    $result = mysqli_query($conn, $sql);
    if ($result) {
    	  header("Location: ..View/read.php?success=successfully deleted");

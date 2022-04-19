@@ -25,9 +25,9 @@
                             ?>" placeholder="email">
                 </div>
 
-                <input type="submit" value="Create" class="btn">
-                <input type="submit" value="Update" class="btn">
-                <input type="submit" value="Delete" class="btn">
+                <input type="submit" value="create" class="btn">
+                <input type="submit" value="update" class="btn">
+                <input type="submit" value="delete" class="btn">
 
             </form>
 
